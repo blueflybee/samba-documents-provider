@@ -18,7 +18,6 @@
 package com.google.android.sambadocumentsprovider.mount;
 
 import static android.system.OsConstants.S_ISDIR;
-import static com.google.android.sambadocumentsprovider.base.DocumentIdHelper.toRootId;
 
 import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
@@ -26,7 +25,6 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
-import android.provider.DocumentsContract;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
 import android.support.design.widget.Snackbar;
@@ -58,14 +56,9 @@ import com.google.android.sambadocumentsprovider.base.OnTaskFinishedCallback;
 import com.google.android.sambadocumentsprovider.cache.DocumentCache;
 import com.google.android.sambadocumentsprovider.document.DocumentMetadata;
 import com.google.android.sambadocumentsprovider.nativefacade.SmbClient;
-import com.google.android.sambadocumentsprovider.nativefacade.SmbFacade;
-import com.google.android.sambadocumentsprovider.nativefacade.SmbFile;
-import com.google.android.sambadocumentsprovider.provider.SambaDocumentsProvider;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.Serializable;
-import java.net.MalformedURLException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Iterator;

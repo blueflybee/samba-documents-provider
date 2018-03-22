@@ -51,15 +51,14 @@ import com.google.android.sambadocumentsprovider.auth.AuthActivity;
 import com.google.android.sambadocumentsprovider.base.AuthFailedException;
 import com.google.android.sambadocumentsprovider.base.DirectoryEntry;
 import com.google.android.sambadocumentsprovider.base.DocumentCursor;
+import com.google.android.sambadocumentsprovider.base.OnTaskFinishedCallback;
 import com.google.android.sambadocumentsprovider.browsing.NetworkBrowser;
 import com.google.android.sambadocumentsprovider.cache.CacheResult;
 import com.google.android.sambadocumentsprovider.cache.DocumentCache;
 import com.google.android.sambadocumentsprovider.document.DocumentMetadata;
 import com.google.android.sambadocumentsprovider.document.LoadChildrenTask;
-import com.google.android.sambadocumentsprovider.base.OnTaskFinishedCallback;
 import com.google.android.sambadocumentsprovider.document.LoadDocumentTask;
 import com.google.android.sambadocumentsprovider.document.LoadStatTask;
-import com.google.android.sambadocumentsprovider.mount.MountServerActivity;
 import com.google.android.sambadocumentsprovider.nativefacade.SmbFacade;
 
 import java.io.FileNotFoundException;
