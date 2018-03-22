@@ -22,9 +22,9 @@
 #ifndef __CREDENTIALS_H__
 #define __CREDENTIALS_H__
 
-#include <util/time.h>
-#include <util/data_blob.h>
-#include <gen_ndr/misc.h>
+#include "util/time.h"
+#include "util/data_blob.h"
+#include "gen_ndr/misc.h"
 
 struct cli_credentials;
 struct ccache_container;

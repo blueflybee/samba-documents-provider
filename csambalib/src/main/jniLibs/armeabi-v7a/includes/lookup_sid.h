@@ -23,7 +23,7 @@
 #ifndef _PASSDB_LOOKUP_SID_H_
 #define _PASSDB_LOOKUP_SID_H_
 
-#include <gen_ndr/lsa.h>
+#include "gen_ndr/lsa.h"
 
 struct passwd;
 struct unixid;

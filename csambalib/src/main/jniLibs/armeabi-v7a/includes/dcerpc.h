@@ -27,10 +27,10 @@
 #ifndef __S4_DCERPC_H__
 #define __S4_DCERPC_H__
 
-#include <util/data_blob.h>
-#include <gen_ndr/dcerpc.h>
-#include <ndr.h>
-#include <rpc_common.h>
+#include "util/data_blob.h"
+#include "gen_ndr/dcerpc.h"
+#include "ndr.h"
+#include "rpc_common.h"
 
 struct tevent_context;
 struct tevent_req;

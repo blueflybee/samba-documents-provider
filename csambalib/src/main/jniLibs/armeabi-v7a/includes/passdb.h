@@ -31,7 +31,7 @@
 #define LM_HASH_LEN 16
 #endif
 
-#include <gen_ndr/lsa.h>
+#include "gen_ndr/lsa.h"
 #include <tevent.h>
 struct unixid;
 struct cli_credentials;
@@ -976,8 +976,8 @@ NTSTATUS pdb_create_builtin(uint32_t rid);
 NTSTATUS create_builtin_users(const struct dom_sid *sid);
 NTSTATUS create_builtin_administrators(const struct dom_sid *sid);
 
-#include <machine_sid.h>
-#include <lookup_sid.h>
+#include "machine_sid.h"
+#include "lookup_sid.h"
 
 /* The following definitions come from passdb/pdb_unixid.c */
 void unixid_from_uid(struct unixid *id, uint32_t some_uid);

@@ -5,7 +5,7 @@
 
 #include <stdint.h>
 
-#include <core/ntstatus.h>
+#include "core/ntstatus.h"
 
 #ifndef _HEADER_smb2_lease_struct
 #define _HEADER_smb2_lease_struct
